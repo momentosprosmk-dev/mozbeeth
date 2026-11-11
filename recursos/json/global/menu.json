@@ -1,0 +1,10 @@
+{
+  "brand": "MOZBEETH",
+  "sections": [
+    { "label": "Catálogo de Beats", "url": "/catalogo/categorias/" },
+    { "label": "Servicios & Licencias", "url": "/servicios/" },
+    { "label": "Créditos & Hits", "url": "/creditos/" },
+    { "label": "El Estudio", "url": "/estudio/" },
+    { "label": "Cotizar Proyecto", "url": "/formularios/cotizar/" }
+  ]
+}

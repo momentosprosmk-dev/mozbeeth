@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#040711"/>
+      <stop offset="55%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#05060a"/>
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="neonRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#9f1239" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="750" fill="url(#sky)"/>
+  <!-- Edificios nocturnos y neones -->
+  <rect x="20" y="60" width="95" height="440" fill="#070b14"/>
+  <rect x="125" y="120" width="70" height="380" fill="#09101d"/>
+  <rect x="420" y="80" width="80" height="420" fill="#080e1a"/>
+  <rect x="505" y="40" width="85" height="460" fill="#060911"/>
+  <!-- Letreros de neón verticales -->
+  <rect x="55" y="90" width="26" height="170" rx="4" fill="none" stroke="#38bdf8" stroke-width="3"/>
+  <rect x="62" y="105" width="12" height="14" fill="#38bdf8" opacity="0.8"/>
+  <rect x="62" y="130" width="12" height="14" fill="#38bdf8" opacity="0.8"/>
+  <rect x="62" y="155" width="12" height="14" fill="#38bdf8" opacity="0.8"/>
+  <rect x="145" y="170" width="22" height="130" rx="4" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <rect x="445" y="150" width="24" height="150" rx="4" fill="none" stroke="#f43f5e" stroke-width="3"/>
+  <!-- Carretera húmeda con reflejos -->
+  <polygon points="0,750 220,470 380,470 600,750" fill="#080b12"/>
+  <line x1="300" y1="470" x2="300" y2="750" stroke="#38bdf8" stroke-width="2" stroke-dasharray="18 14" opacity="0.4"/>
+  <!-- Reflejos en el asfalto -->
+  <ellipse cx="220" cy="610" rx="80" ry="12" fill="#f43f5e" opacity="0.25"/>
+  <ellipse cx="370" cy="630" rx="70" ry="10" fill="#38bdf8" opacity="0.22"/>
+  <!-- Silueta auto deportivo vista trasera con luces rojas -->
+  <path d="M175 560 L215 505 L385 505 L425 560 L440 615 L160 615 Z" fill="#0c111d" stroke="#1e293b" stroke-width="2"/>
+  <path d="M225 512 L375 512 L400 552 L200 552 Z" fill="#050811"/>
+  <!-- Luces traseras LED rojas -->
+  <rect x="175" y="568" width="72" height="10" rx="4" fill="#ff1e42"/>
+  <rect x="353" y="568" width="72" height="10" rx="4" fill="#ff1e42"/>
+  <rect x="170" y="565" width="82" height="16" rx="6" fill="#ff1e42" opacity="0.35"/>
+  <rect x="348" y="565" width="82" height="16" rx="6" fill="#ff1e42" opacity="0.35"/>
+</svg>

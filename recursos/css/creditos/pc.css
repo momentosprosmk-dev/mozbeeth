@@ -1,0 +1,24 @@
+/* pc.css | Créditos & Discografía (>= 1024px) - Mozbeeth */
+
+@media (min-width: 1024px) {
+  .creditos-scroll {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px 100px;
+  }
+
+  .credits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .credit-card {
+    transition: transform 0.25s ease;
+  }
+
+  .credit-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--oro);
+  }
+}

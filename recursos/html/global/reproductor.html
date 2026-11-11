@@ -1,0 +1,48 @@
+<!-- Barra de Reproductor Persistente & Modal de Licencia -->
+<aside id="player-bar" class="player-bar" aria-label="Reproductor de audio">
+  <div class="player-inner">
+    <div class="player-track">
+      <div id="player-cover" class="player-cover"></div>
+      <div class="player-info-text">
+        <div id="player-title" class="player-title">Selecciona un Beat</div>
+        <div id="player-meta" class="player-meta">Mozbeeth Studio</div>
+      </div>
+    </div>
+
+    <div class="player-controls-wrap">
+      <div class="player-buttons">
+        <button id="btn-prev" class="ctrl-btn" aria-label="Anterior">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+        <button id="btn-play-toggle" class="ctrl-btn play-main" aria-label="Reproducir o Pausar">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="btn-next" class="ctrl-btn" aria-label="Siguiente">
+          <i class="fa-solid fa-forward-step"></i>
+        </button>
+      </div>
+
+      <div class="player-timeline">
+        <span id="player-time-current">0:00</span>
+        <div id="player-progress-wrap" class="progress-wrap">
+          <div id="player-progress-fill" class="progress-fill"></div>
+        </div>
+        <span id="player-time-total">3:00</span>
+      </div>
+    </div>
+
+    <div class="player-actions">
+      <input
+        type="range"
+        id="player-volume"
+        class="volume-slider"
+        min="0"
+        max="1"
+        step="0.02"
+        value="0.8"
+        aria-label="Volumen"
+      />
+      <a href="/formularios/cotizar/" id="player-buy-btn" class="btn-player-lic">Licenciar</a>
+    </div>
+  </div>
+</aside>

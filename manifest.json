@@ -1,0 +1,15 @@
+{
+  "name": "MOZBEETH | Productor Musical & Beatmaker",
+  "short_name": "MOZBEETH",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07070c",
+  "theme_color": "#f59e0b",
+  "icons": [
+    {
+      "src": "/recursos/media/global/logo_mozbeeth.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+/* movil.css | Vista Móvil (<= 1024px) - Portal Mozbeeth (Estilo betz_movil) */
+
+/* Contenedor principal con scroll en móvil */
+.section-scroll {
+  position: fixed;
+  top: var(--header-height);
+  bottom: var(--footer-height);
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  background: var(--negro);
+  padding-bottom: 85px;
+}
+
+/* 1. Hero Móvil con imagen de estudio de fondo */
+.movil-hero {
+  position: relative;
+  background-image: url('../../media/index/hero_mozbeeth.svg');
+  background-size: cover;
+  background-position: 68% center;
+  padding: 36px 20px 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.movil-hero-title {
+  font-size: 2.35rem;
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: var(--blanco);
+}
+
+.movil-hero-title .gold-word {
+  color: var(--oro);
+}
+
+.movil-hero-subbar {
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gris-claro);
+  margin: 0 0 14px;
+}
+
+.movil-hero-desc {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--gris-claro);
+  max-width: 280px;
+  margin: 0 0 22px;
+}
+
+.movil-hero-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.btn-movil-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-width: 220px;
+  background: var(--oro);
+  color: var(--negro);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-movil-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 175px;
+  background: rgba(6, 7, 9, 0.75);
+  color: var(--blanco);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 169, 123, 0.45);
+  text-decoration: none;
+}
+
+/* 2. Franja de 4 pilares con iconos y divisores verticales */
+.movil-pillars-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #08090c;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 20px 8px;
+}
+
+.movil-pillar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 6px;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+  text-decoration: none;
+  color: inherit;
+}
+
+.movil-pillar:last-child {
+  border-right: none;
+}
+
+.movil-pillar-icon {
+  font-size: 1.35rem;
+  color: var(--blanco);
+  margin-bottom: 10px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+}
+
+.movil-pillar h3 {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blanco);
+  margin: 0 0 6px;
+  line-height: 1.25;
+}
+
+.movil-pillar p {
+  font-size: 0.62rem;
+  color: var(--gris);
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* 3. Contenedor de Beats Destacados en Móvil */
+.movil-beats-section {
+  padding: 22px 16px 10px;
+}
+
+/* 4. Frase + Firma + Redes Sociales al final de Móvil */
+.movil-quote-footer {
+  text-align: center;
+  padding: 26px 16px 18px;
+}
+
+.movil-quote-text {
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gris-claro);
+  line-height: 1.6;
+  margin: 0 0 10px;
+}
+
+.movil-signature {
+  font-family: var(--font-signature);
+  font-size: 2.3rem;
+  color: var(--gris-claro);
+  font-weight: 400;
+  margin: 0 0 16px;
+  opacity: 0.85;
+}
+
+.movil-social-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+
+.movil-social-row a {
+  color: var(--blanco);
+  font-size: 1.3rem;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+/* --- RESPONSIVE --- */
+/* Pantallas menores a 1024px (Movil) */
+@media (max-width: 1024px) {
+  .section-scroll {
+    display: block;
+  }
+}
+
+/* Pantallas mayores a 1024px (PC) */
+@media (min-width: 1024px) {
+  .section-scroll {
+    display: none;
+  }
+}

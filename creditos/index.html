@@ -1,0 +1,59 @@
+<!-- index.html | Créditos & Discografía - MOZBEETH -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Créditos & Lanzamientos - MOZBEETH Music Producer</title>
+  <link rel="icon" href="/recursos/media/global/logo_mozbeeth.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/recursos/css/global/base.css" />
+  <link rel="stylesheet" href="/recursos/css/global/header.css" />
+  <link rel="stylesheet" href="/recursos/css/global/footer.css" />
+  <link rel="stylesheet" href="/recursos/css/global/scrollVertical.css" />
+  <!-- CSS Separado (<= 1024px Movil | >= 1024px PC) -->
+  <link rel="stylesheet" href="/recursos/css/creditos/movil.css" />
+  <link rel="stylesheet" href="/recursos/css/creditos/pc.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="/"><img src="/recursos/media/global/logo_mozbeeth.svg" alt="Logo Mozbeeth" /></a></div>
+    <button id="btn-menu" class="menu-btn no-active">☰</button>
+    <nav class="nav">
+      <ul>
+        <li><a href="/" class="bt-opc">Inicio</a></li>
+        <li><a href="/catalogo/categorias/" class="bt-opc">Catálogo Beats</a></li>
+        <li><a href="/servicios/" class="bt-opc">Servicios</a></li>
+        <li><a href="/estudio/" class="bt-opc">El Estudio</a></li>
+        <li><a href="/formularios/cotizar/" class="bt-opc">Cotizar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-scroll creditos-scroll">
+    <div style="text-align:center; margin-bottom:28px;">
+      <h1 style="font-family:var(--font-display); color:var(--oro); margin:0 0 8px;">CRÉDITOS & LANZAMIENTOS</h1>
+      <p style="color:var(--gris); margin:0;">Producciones ejecutivas, instrumentales, mezclas y masters destacados</p>
+    </div>
+
+    <div id="credits-grid" class="credits-grid"></div>
+  </section>
+
+  <div id="overlay" class="overlay"></div>
+  <div id="menu-container"></div>
+
+  <footer>
+    <section class="footer-movil">
+      <a href="/" class="btn-footer">⌂ Inicio</a>
+      <a href="/catalogo/categorias/" class="btn-footer btn-footer-alt">🎧 Beats</a>
+    </section>
+    <div id="footer-pc"></div>
+  </footer>
+
+  <script src="/recursos/js/global/gateway.js"></script>
+  <script src="/recursos/js/global/copyright.js"></script>
+  <script src="/recursos/js/desplegable/modulesMenu.js"></script>
+  <script src="/recursos/js/desplegable/menuLoader.js"></script>
+  <script src="/recursos/js/creditos/creditos.js"></script>
+</body>
+</html>

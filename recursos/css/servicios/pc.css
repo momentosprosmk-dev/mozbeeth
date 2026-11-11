@@ -1,0 +1,33 @@
+/* pc.css | Servicios & Licencias (>= 1024px) - Mozbeeth */
+
+@media (min-width: 1024px) {
+  .servicios-scroll {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px 100px;
+  }
+
+  .page-title-block h1 {
+    font-size: 2.5rem;
+  }
+
+  .services-grid,
+  .licenses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin-bottom: 56px;
+  }
+
+  .service-card,
+  .license-card {
+    padding: 30px 26px;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+  }
+
+  .service-card:hover,
+  .license-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--oro);
+  }
+}

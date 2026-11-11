@@ -1,0 +1,201 @@
+<!-- index.html | Portal Oficial - MOZBEETH Music Producer -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO básico -->
+  <title>MOZBEETH | Productor Musical, Beatmaker & Estudio de Mezcla</title>
+  <meta name="description" content="Beats originales, producción musical a medida, mezcla y mastering profesional para artistas que piensan diferente." />
+  <meta name="keywords" content="productor musical, beats, reggaeton, trap, r&b, mezcla, mastering, Mozbeeth" />
+  <!-- Favicon -->
+  <link rel="icon" href="/recursos/media/global/favicon_mozbeeth.ico" type="image/svg+xml" />
+  <!-- Tipografías & Iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- CSS Global -->
+  <link rel="stylesheet" href="/recursos/css/global/base.css" />
+  <link rel="stylesheet" href="/recursos/css/global/header.css" />
+  <link rel="stylesheet" href="/recursos/css/global/footer.css" />
+  <link rel="stylesheet" href="/recursos/css/global/scrollVertical.css" />
+  <!-- CSS Catálogo (<= 1024px Movil | >= 1024px PC) -->
+  <link rel="stylesheet" href="/recursos/css/catalogo/movil.css" />
+  <link rel="stylesheet" href="/recursos/css/catalogo/pc.css" />
+  <!-- CSS Index Separado (<= 1024px Movil | >= 1024px PC) -->
+  <link rel="stylesheet" href="/recursos/css/index/movil.css" />
+  <link rel="stylesheet" href="/recursos/css/index/pc.css" />
+  <!-- Manifest PWA -->
+  <link rel="manifest" href="/manifest.json" />
+</head>
+
+<body>
+  <!-- ==================== HEADER GENERAL ==================== -->
+  <header class="header">
+    <div class="logo">
+      <a href="/"><img src="/recursos/media/global/logo_mozbeeth.avif" alt="Mozbeeth Music Producer" /></a>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="/">INICIO</a></li>
+        <li><a href="/catalogo/categorias/" class="active">BEATS</a></li>
+        <li><a href="/servicios/">SERVICIOS</a></li>
+        <li><a href="/estudio/">SOBRE MÍ</a></li>
+        <li><a href="/formularios/cotizar/">CONTACTO</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-right-pc">
+      <div class="header-socials">
+        <a id="btn-instagram" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a id="btn-youtube" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a id="btn-spotify" target="_blank" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+        <a href="https://soundcloud.com/" target="_blank" aria-label="SoundCloud"><i class="fa-brands fa-soundcloud"></i></a>
+      </div>
+      <a href="/formularios/cotizar/" class="btn-header-cta">TRABAJA CONMIGO</a>
+    </div>
+
+    <button id="btn-menu" class="menu-btn no-active" aria-label="Menú">☰</button>
+  </header>
+
+  <!-- ==================== VISTA PC (>= 1024px) - Estilo betz_pc ==================== -->
+  <main class="pc-portal">
+    <!-- Hero PC -->
+    <section class="hero-pc">
+      <div class="hero-pc-inner">
+        <span class="hero-pc-eyebrow">BEATS QUE INSPIRAN</span>
+        <h1 class="hero-pc-title">
+          IDEAS
+          <span>HECHAS SONIDO</span>
+        </h1>
+        <p class="hero-pc-sub">Beats originales para artistas que piensan diferente.</p>
+        <div class="hero-pc-actions">
+          <button type="button" class="btn-pc-gold js-hero-listen-btn">
+            <span>ESCUCHA MIS BEATS</span>
+            <span>&rarr;</span>
+          </button>
+          <a href="/estudio/" class="btn-pc-outline">SOBRE MÍ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Beats Destacados en PC (3 Tarjetas + Panel Grande) -->
+    <section class="pc-beats-main">
+      <div class="beats-section-header">
+        <h2>BEATS DESTACADOS</h2>
+        <a href="/catalogo/categorias/">VER TODOS <span>&rarr;</span></a>
+      </div>
+
+      <!-- 3 Tarjetas de Beats con Onda, Spotify, YouTube y Comprar Licencia -->
+      <div class="beats-pc-grid js-beats-pc-grid" data-limit="3"></div>
+
+      <!-- Panel Grande Inferior: Beat Destacado -->
+      <div id="featured-beat-container"></div>
+    </section>
+
+    <div class="pc-quote-bottom">
+      <p>"LA MÚSICA NO SOLO SE ESCUCHA, SE SIENTE"</p>
+      <span>MOZBEETH</span>
+    </div>
+  </main>
+
+  <!-- ==================== VISTA MÓVIL (<= 1024px) - Estilo betz_movil ==================== -->
+  <section class="section-scroll">
+    <!-- 1. Hero Móvil -->
+    <div class="movil-hero">
+      <h1 class="movil-hero-title">
+        MÚSICA<br />
+        <span class="gold-word">SIN</span> LÍMITES
+      </h1>
+      <p class="movil-hero-subbar">BEATS &middot; PRODUCCIÓN &middot; MEZCLA &middot; MASTERING</p>
+      <p class="movil-hero-desc">
+        Transformo ideas en canciones. Producción musical para artistas que quieren sonar diferente.
+      </p>
+      <div class="movil-hero-btns">
+        <button type="button" class="btn-movil-gold js-hero-listen-btn">
+          <span>ESCUCHA MIS BEATS</span>
+          <span>&rarr;</span>
+        </button>
+        <a href="/formularios/cotizar/" class="btn-movil-outline">CONTÁCTAME</a>
+      </div>
+    </div>
+
+    <!-- 2. Franja de 4 Servicios con Iconos -->
+    <div class="movil-pillars-strip">
+      <a href="/catalogo/categorias/" class="movil-pillar">
+        <div class="movil-pillar-icon"><i class="fa-solid fa-wave-square"></i></div>
+        <h3>BEATS<br />ORIGINALES</h3>
+        <p>Sonidos listos para tu próximo hit.</p>
+      </a>
+      <a href="/servicios/" class="movil-pillar">
+        <div class="movil-pillar-icon"><i class="fa-solid fa-sliders"></i></div>
+        <h3>PRODUCCIÓN<br />A MEDIDA</h3>
+        <p>Tu visión, mi experiencia.</p>
+      </a>
+      <a href="/servicios/" class="movil-pillar">
+        <div class="movil-pillar-icon"><i class="fa-solid fa-headphones"></i></div>
+        <h3>MEZCLA &amp;<br />MASTERING</h3>
+        <p>Haz que tu música suene profesional.</p>
+      </a>
+      <a href="/formularios/cotizar/" class="movil-pillar">
+        <div class="movil-pillar-icon"><i class="fa-solid fa-user-group"></i></div>
+        <h3>COLABORACIONES</h3>
+        <p>Trabajemos juntos.</p>
+      </a>
+    </div>
+
+    <!-- 3. Lista de Beats Destacados en Móvil -->
+    <div class="movil-beats-section">
+      <div class="beats-section-header">
+        <h2>BEATS DESTACADOS</h2>
+        <a href="/catalogo/categorias/">VER TODOS <span>&rarr;</span></a>
+      </div>
+
+      <div class="beats-movil-list js-beats-movil-list" data-limit="4"></div>
+    </div>
+
+    <!-- 4. Cita, Firma y Redes Sociales en Móvil -->
+    <div class="movil-quote-footer">
+      <p class="movil-quote-text">
+        "LA MÚSICA NO SOLO SE ESCUCHA,<br />SE SIENTE"
+      </p>
+      <div class="movil-signature">Mozbeeth</div>
+      <div class="movil-social-row">
+        <a href="/instagram/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com/" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="/spotify/" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+        <a href="https://soundcloud.com/" target="_blank" aria-label="SoundCloud"><i class="fa-brands fa-soundcloud"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overlay - Efecto de transparencia menú móvil -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Contenedor - Menú desplegable -->
+  <div id="menu-container"></div>
+
+  <!-- Contenedor - Reproductor de Audio Persistente -->
+  <div id="reproductor-container"></div>
+
+  <!-- Footer | Mozbeeth -->
+  <footer>
+    <section class="footer-movil">
+      <a href="/catalogo/categorias/" class="btn-footer">🎧 Beats</a>
+      <a href="/formularios/cotizar/" class="btn-footer btn-footer-alt">💬 Cotizar</a>
+    </section>
+    <div id="footer-pc"></div>
+  </footer>
+
+  <!-- Scripts - Recursos -->
+  <script src="/recursos/js/global/gateway.js"></script>
+  <script src="/recursos/js/global/copyright.js"></script>
+  <script src="/recursos/js/desplegable/modulesMenu.js"></script>
+  <script src="/recursos/js/desplegable/menuLoader.js"></script>
+  <script src="/recursos/js/global/audioEngine.js"></script>
+  <script src="/recursos/js/catalogo/catalogo.js"></script>
+</body>
+</html>

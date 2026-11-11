@@ -1,0 +1,66 @@
+<!-- index.html | Servicios de Estudio & Licencias - MOZBEETH -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios & Licencias - MOZBEETH Music Producer</title>
+  <link rel="icon" href="/recursos/media/global/logo_mozbeeth.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/recursos/css/global/base.css" />
+  <link rel="stylesheet" href="/recursos/css/global/header.css" />
+  <link rel="stylesheet" href="/recursos/css/global/footer.css" />
+  <link rel="stylesheet" href="/recursos/css/global/scrollVertical.css" />
+  <!-- CSS Separado (<= 1024px Movil | >= 1024px PC) -->
+  <link rel="stylesheet" href="/recursos/css/servicios/movil.css" />
+  <link rel="stylesheet" href="/recursos/css/servicios/pc.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="/"><img src="/recursos/media/global/logo_mozbeeth.svg" alt="Logo Mozbeeth" /></a></div>
+    <button id="btn-menu" class="menu-btn no-active">☰</button>
+    <nav class="nav">
+      <ul>
+        <li><a href="/" class="bt-opc">Inicio</a></li>
+        <li><a href="/catalogo/categorias/" class="bt-opc">Catálogo Beats</a></li>
+        <li><a href="/creditos/" class="bt-opc">Créditos</a></li>
+        <li><a href="/estudio/" class="bt-opc">El Estudio</a></li>
+        <li><a href="/formularios/cotizar/" class="bt-opc">Cotizar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-scroll servicios-scroll">
+    <div class="page-title-block">
+      <h1>SERVICIOS DE ESTUDIO</h1>
+      <p>Producción musical a medida, mezcla híbrida y mastering competitivo</p>
+    </div>
+
+    <div id="services-grid" class="services-grid"></div>
+
+    <div class="page-title-block">
+      <h1>LICENCIAS DE INSTRUMENTALES</h1>
+      <p>Derechos claros y transparentes para tu próximo lanzamiento</p>
+    </div>
+
+    <div id="licenses-grid" class="licenses-grid"></div>
+  </section>
+
+  <div id="overlay" class="overlay"></div>
+  <div id="menu-container"></div>
+
+  <footer>
+    <section class="footer-movil">
+      <a href="/" class="btn-footer">⌂ Inicio</a>
+      <a href="/formularios/cotizar/" class="btn-footer btn-footer-alt">💬 Cotizar</a>
+    </section>
+    <div id="footer-pc"></div>
+  </footer>
+
+  <script src="/recursos/js/global/gateway.js"></script>
+  <script src="/recursos/js/global/copyright.js"></script>
+  <script src="/recursos/js/desplegable/modulesMenu.js"></script>
+  <script src="/recursos/js/desplegable/menuLoader.js"></script>
+  <script src="/recursos/js/servicios/servicios.js"></script>
+</body>
+</html>

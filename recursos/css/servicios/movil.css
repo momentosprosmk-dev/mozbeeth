@@ -1,0 +1,113 @@
+/* movil.css | Servicios & Licencias (<= 1024px) - Mozbeeth */
+
+.page-title-block {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.page-title-block h1 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  margin: 0 0 8px;
+  color: var(--oro);
+}
+
+.page-title-block p {
+  color: var(--gris);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.service-card,
+.license-card {
+  background: var(--negro-claro);
+  border: 1px solid var(--borde-sutil);
+  border-radius: 16px;
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.license-card.popular {
+  border-color: var(--oro);
+  box-shadow: 0 0 24px rgba(245, 158, 11, 0.2);
+}
+
+.service-badge {
+  display: inline-block;
+  width: fit-content;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(139, 92, 246, 0.2);
+  color: #c4b5fd;
+}
+
+.service-card h3,
+.license-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--blanco);
+}
+
+.license-price {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--oro);
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.feature-list li {
+  font-size: 0.9rem;
+  color: var(--gris-claro);
+}
+
+.feature-list li span {
+  color: var(--oro);
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.card-action-btn {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, var(--oro-oscuro), var(--oro));
+  color: var(--negro);
+  font-weight: 800;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .servicios-scroll {
+    position: fixed;
+    top: var(--header-height);
+    bottom: var(--footer-height);
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    padding: 20px 16px 96px;
+  }
+
+  .services-grid,
+  .licenses-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}

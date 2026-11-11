@@ -1,0 +1,541 @@
+/* pc.css | Diseño de Beats en PC (>= 1024px) - Estilo Referencia betz_pc */
+
+@media (min-width: 1024px) {
+  /* Ocultar la lista compacta móvil en PC */
+  .beats-movil-list {
+    display: none !important;
+  }
+
+  .catalogo-page-scroll {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 48px 24px 100px;
+  }
+
+  .beats-section-header {
+    margin-bottom: 22px;
+  }
+
+  .beats-section-header h2 {
+    font-size: 1.15rem;
+    letter-spacing: 0.08em;
+  }
+
+  /* ================= 1. GRID DE TARJETAS VERTICALES DE BEATS (3 COLUMNAS) ================= */
+  .beats-pc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 32px;
+  }
+
+  .beat-pc-card {
+    background: #0c0e13;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+  }
+
+  .beat-pc-card:hover,
+  .beat-pc-card.active {
+    border-color: rgba(212, 169, 123, 0.45);
+  }
+
+  /* Imagen superior con icono de corazón */
+  .beat-card-cover-wrap {
+    position: relative;
+    height: 175px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+
+  .beat-card-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+
+  .beat-pc-card:hover .beat-card-cover {
+    transform: scale(1.04);
+  }
+
+  .beat-fav-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(8, 9, 12, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--blanco);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .beat-fav-btn:hover,
+  .beat-fav-btn.liked {
+    color: var(--oro);
+    border-color: var(--oro);
+  }
+
+  /* Fila de Play + Onda de Audio + Duración */
+  .beat-card-player-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .beat-card-play-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--blanco);
+    color: var(--negro);
+    border: none;
+    display: grid;
+    place-items: center;
+    font-size: 0.85rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+
+  .beat-card-play-btn:hover {
+    transform: scale(1.06);
+    background: var(--oro);
+  }
+
+  /* Barras de onda (Waveform) */
+  .waveform-bars {
+    flex: 1;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .waveform-bars span {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 2px;
+    transition: background 0.2s ease;
+  }
+
+  .beat-pc-card.active .waveform-bars span.played {
+    background: var(--oro);
+  }
+
+  .beat-card-time {
+    font-size: 0.72rem;
+    color: var(--gris);
+    white-space: nowrap;
+  }
+
+  /* Título y BPM */
+  .beat-card-title {
+    margin: 0 0 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--blanco);
+  }
+
+  .beat-card-sub {
+    margin: 0 0 14px;
+    font-size: 0.8rem;
+    color: var(--gris);
+  }
+
+  /* Botones de Spotify y YouTube dentro de la tarjeta */
+  .beat-card-platforms {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .btn-plat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 14px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.015);
+    color: var(--blanco-oscuro);
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .btn-plat-spotify {
+    border: 1px solid rgba(29, 185, 84, 0.32);
+  }
+  .btn-plat-spotify i {
+    color: var(--spotify-green);
+    font-size: 1rem;
+  }
+  .btn-plat-spotify:hover {
+    background: rgba(29, 185, 84, 0.08);
+    border-color: var(--spotify-green);
+  }
+
+  .btn-plat-youtube {
+    border: 1px solid rgba(255, 0, 0, 0.32);
+  }
+  .btn-plat-youtube i {
+    color: var(--youtube-red);
+    font-size: 1rem;
+  }
+  .btn-plat-youtube:hover {
+    background: rgba(255, 0, 0, 0.08);
+    border-color: var(--youtube-red);
+  }
+
+  .btn-plat-soundcloud {
+    border: 1px solid rgba(255, 85, 0, 0.32);
+  }
+  .btn-plat-soundcloud i {
+    color: var(--soundcloud-orange);
+    font-size: 1rem;
+  }
+  .btn-plat-soundcloud:hover {
+    background: rgba(255, 85, 0, 0.08);
+    border-color: var(--soundcloud-orange);
+  }
+
+  /* Fila inferior: Comprar licencia + Botón ... */
+  .beat-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-card-license {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 9px 14px;
+    border-radius: 6px;
+    background: rgba(212, 169, 123, 0.05);
+    border: 1px solid rgba(212, 169, 123, 0.42);
+    color: var(--blanco);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .btn-card-license i {
+    color: var(--oro);
+  }
+
+  .btn-card-license:hover {
+    background: var(--oro);
+    color: var(--negro);
+  }
+
+  .btn-card-license:hover i {
+    color: var(--negro);
+  }
+
+  .btn-card-more {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--gris-claro);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+  }
+
+  .btn-card-more:hover {
+    border-color: var(--oro);
+    color: var(--oro);
+  }
+
+  /* ================= 2. PANEL GRANDE INFERIOR: BEAT DESTACADO ================= */
+  .featured-beat-panel {
+    background: #0c0e13;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 26px;
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    gap: 32px;
+    align-items: stretch;
+  }
+
+  .featured-poster {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 340px;
+  }
+
+  .featured-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .featured-poster-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 45%, rgba(5, 6, 9, 0.92) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 22px;
+    text-align: center;
+  }
+
+  .featured-poster-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--blanco);
+    margin-bottom: 14px;
+  }
+
+  .featured-poster-brand {
+    font-size: 0.68rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gris-claro);
+  }
+
+  .featured-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .featured-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .featured-badge {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: var(--gris-claro);
+  }
+
+  .featured-top-actions {
+    display: flex;
+    gap: 18px;
+    font-size: 0.78rem;
+    color: var(--gris-claro);
+  }
+
+  .featured-top-actions button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .featured-top-actions button:hover {
+    color: var(--oro);
+  }
+
+  .featured-main-title {
+    font-size: 1.95rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 6px;
+    color: var(--blanco);
+  }
+
+  .featured-main-meta {
+    font-size: 0.88rem;
+    color: var(--gris);
+    margin: 0 0 12px;
+  }
+
+  .featured-main-desc {
+    font-size: 0.9rem;
+    color: var(--gris-claro);
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 0 20px;
+  }
+
+  /* Reproductor ancho del Beat Destacado */
+  .featured-player-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .featured-play-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.75);
+    color: var(--blanco);
+    display: grid;
+    place-items: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+  }
+
+  .featured-play-btn:hover {
+    border-color: var(--oro);
+    color: var(--oro);
+  }
+
+  .featured-waveform {
+    flex: 1;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .featured-waveform span {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+  }
+
+  .featured-waveform span.played {
+    background: var(--blanco);
+  }
+
+  .featured-volume-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--gris-claro);
+  }
+
+  .featured-volume-wrap input {
+    width: 80px;
+    accent-color: var(--blanco);
+  }
+
+  .featured-platforms-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--gris-claro);
+    margin: 0 0 10px;
+  }
+
+  .featured-platforms-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+
+  .featured-cta-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .btn-featured-buy {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--oro);
+    color: var(--negro);
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: filter 0.2s ease, transform 0.2s ease;
+  }
+
+  .btn-featured-buy:hover {
+    filter: brightness(1.08);
+    transform: translateY(-2px);
+  }
+
+  .featured-perks {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 0.76rem;
+    color: var(--gris);
+  }
+
+  .featured-perks span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .featured-perks i {
+    color: var(--gris-claro);
+  }
+
+  .categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+
+  .categoria-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 22px;
+    background: #0c0e13;
+    border: 1px solid var(--borde-sutil);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 0.92rem;
+    transition: border-color 0.2s ease;
+  }
+
+  .categoria-card:hover {
+    border-color: var(--oro);
+  }
+}

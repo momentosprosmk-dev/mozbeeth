@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="crimsonGlow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="55%" stop-color="#7f1d1d"/>
+      <stop offset="100%" stop-color="#090406"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#crimsonGlow)"/>
+  <!-- Silueta contraluz en estudio rojo -->
+  <g fill="#060405">
+    <circle cx="305" cy="155" r="56"/>
+    <path d="M250 145 Q 255 95 305 95 Q 355 95 360 150 Q 370 180 350 205 L 255 205 Z"/>
+    <path d="M185 400 Q 200 245 305 245 Q 410 245 425 400 Z"/>
+  </g>
+</svg>

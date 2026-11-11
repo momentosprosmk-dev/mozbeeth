@@ -1,0 +1,22 @@
+[
+  {
+    "category": "DAWs & Producción",
+    "items": "Ableton Live Suite • Pro Tools Studio • FL Studio",
+    "description": "Flujo de trabajo híbrido para composición rápida, grabación multipista y mezcla de precisión."
+  },
+  {
+    "category": "Monitoreo & Conversión",
+    "items": "Focal Shape / Adam Audio • Universal Audio Apollo Twin X",
+    "description": "Acústica controlada y conversión AD/DA de referencia para decisiones confiables."
+  },
+  {
+    "category": "Cadena Vocal & Hardware",
+    "items": "Neumann TLM 103 • Preamp estilo Neve 1073 • Compresor Óptico",
+    "description": "Color cálido, presencia frontal y compresión sedosa desde la toma inicial."
+  },
+  {
+    "category": "Sintetizadores & DSP",
+    "items": "UAD Spark • Arturia V Collection • FabFilter Total Bundle",
+    "description": "Texturas analógicas y procesamiento quirúrgico para lograr estándares internacionales."
+  }
+]

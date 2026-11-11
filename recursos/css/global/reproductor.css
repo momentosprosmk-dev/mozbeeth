@@ -1,0 +1,153 @@
+/* reproductor.css | Barra de Audio Persistente - Mozbeeth */
+
+.player-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 990;
+  background: rgba(10, 11, 18, 0.95);
+  backdrop-filter: blur(18px);
+  border-top: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 10px 24px;
+  transform: translateY(120%);
+  transition: transform 0.3s ease;
+}
+
+.player-bar.visible {
+  transform: translateY(0);
+}
+
+.player-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.player-track {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.player-cover {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--oro), var(--violeta));
+  flex-shrink: 0;
+}
+
+.player-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--blanco);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player-meta {
+  font-size: 0.75rem;
+  color: var(--gris);
+}
+
+.player-controls-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.player-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ctrl-btn {
+  background: transparent;
+  border: none;
+  color: var(--gris-claro);
+  font-size: 1rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.ctrl-btn.play-main {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--oro);
+  color: var(--negro);
+}
+
+.player-timeline {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.72rem;
+  color: var(--gris);
+}
+
+.progress-wrap {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--oro), var(--rosa));
+}
+
+.player-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.volume-slider {
+  width: 85px;
+  accent-color: var(--oro);
+}
+
+.btn-player-lic {
+  background: var(--oro);
+  color: var(--negro);
+  font-weight: 800;
+  font-size: 0.82rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+/* --- RESPONSIVE --- */
+/* Pantallas menores a 1024px (Movil) */
+@media (max-width: 1024px) {
+  .player-bar {
+    bottom: var(--footer-height);
+    padding: 8px 14px;
+  }
+  .player-inner {
+    grid-template-columns: 1.1fr 1fr;
+  }
+  .player-actions,
+  .player-timeline {
+    display: none;
+  }
+  .player-controls-wrap {
+    align-items: flex-end;
+  }
+}

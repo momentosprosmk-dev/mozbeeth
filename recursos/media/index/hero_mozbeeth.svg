@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="darkLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050608" stop-opacity="0.98"/>
+      <stop offset="42%" stop-color="#08090c" stop-opacity="0.88"/>
+      <stop offset="75%" stop-color="#0b0c10" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#08090c" stop-opacity="0.85"/>
+    </linearGradient>
+    <radialGradient id="amberAmbient" cx="72%" cy="42%" r="45%">
+      <stop offset="0%" stop-color="#d4a97b" stop-opacity="0.28"/>
+      <stop offset="50%" stop-color="#92400e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#050608" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="screenGlow" cx="64%" cy="48%" r="22%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#050608" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fondo base negro estudio -->
+  <rect width="1600" height="800" fill="#07080a"/>
+  <rect width="1600" height="800" fill="url(#amberAmbient)"/>
+  <rect width="1600" height="800" fill="url(#screenGlow)"/>
+
+  <!-- Cuadro en pared del estudio: BEATS PEOPLE CULTURE -->
+  <g transform="translate(880, 90)">
+    <rect x="0" y="0" width="160" height="210" rx="4" fill="#0c0e14" stroke="#1e222d" stroke-width="3"/>
+    <text x="80" y="65" text-anchor="middle" fill="#64748b" font-family="Montserrat, sans-serif" font-weight="800" font-size="18" letter-spacing="2">BEATS</text>
+    <text x="80" y="95" text-anchor="middle" fill="#64748b" font-family="Montserrat, sans-serif" font-weight="800" font-size="18" letter-spacing="2">PEOPLE</text>
+    <text x="80" y="125" text-anchor="middle" fill="#64748b" font-family="Montserrat, sans-serif" font-weight="800" font-size="18" letter-spacing="2">CULTURE</text>
+    <line x1="65" y1="145" x2="95" y2="145" stroke="#d4a97b" stroke-width="2"/>
+  </g>
+
+  <!-- Letrero Neón Cálido en pared derecha: Create Produce Repeat -->
+  <g transform="translate(1330, 120) rotate(-8)">
+    <text x="0" y="0" fill="#f5d0a9" font-family="Georgia, serif" font-style="italic" font-size="42" opacity="0.9">Create</text>
+    <text x="-10" y="45" fill="#f5d0a9" font-family="Georgia, serif" font-style="italic" font-size="42" opacity="0.9">Produce</text>
+    <text x="5" y="90" fill="#f5d0a9" font-family="Georgia, serif" font-style="italic" font-size="42" opacity="0.9">Repeat</text>
+  </g>
+
+  <!-- Monitores de Estudio (Yamaha HS / Focal style con cono blanco) -->
+  <!-- Monitor Izquierdo -->
+  <g transform="translate(720, 290)">
+    <rect x="0" y="0" width="96" height="145" rx="6" fill="#101218" stroke="#222632" stroke-width="2"/>
+    <circle cx="48" cy="40" r="14" fill="#1e222d"/>
+    <circle cx="48" cy="96" r="30" fill="#d1d5db"/>
+    <circle cx="48" cy="96" r="10" fill="#111318"/>
+  </g>
+  <!-- Monitor Derecho -->
+  <g transform="translate(1235, 290)">
+    <rect x="0" y="0" width="96" height="145" rx="6" fill="#101218" stroke="#222632" stroke-width="2"/>
+    <circle cx="48" cy="40" r="14" fill="#1e222d"/>
+    <circle cx="48" cy="96" r="30" fill="#d1d5db"/>
+    <circle cx="48" cy="96" r="10" fill="#111318"/>
+  </g>
+
+  <!-- Pantalla DAW Multipista en el centro -->
+  <g transform="translate(845, 240)">
+    <rect x="0" y="0" width="360" height="205" rx="6" fill="#0b1320" stroke="#262b38" stroke-width="4"/>
+    <!-- Pistas del DAW -->
+    <rect x="14" y="18" width="332" height="22" rx="3" fill="#16243a"/>
+    <rect x="70" y="22" width="110" height="14" rx="2" fill="#38bdf8" opacity="0.6"/>
+    <rect x="190" y="22" width="95" height="14" rx="2" fill="#d4a97b" opacity="0.7"/>
+
+    <rect x="14" y="48" width="332" height="22" rx="3" fill="#16243a"/>
+    <rect x="50" y="52" width="180" height="14" rx="2" fill="#8b5cf6" opacity="0.6"/>
+
+    <rect x="14" y="78" width="332" height="22" rx="3" fill="#16243a"/>
+    <rect x="90" y="82" width="140" height="14" rx="2" fill="#10b981" opacity="0.6"/>
+
+    <rect x="14" y="108" width="332" height="22" rx="3" fill="#16243a"/>
+    <rect x="60" y="112" width="210" height="14" rx="2" fill="#f59e0b" opacity="0.6"/>
+  </g>
+
+  <!-- Silueta del Productor de espaldas con gorra y hoodie negro -->
+  <g>
+    <!-- Silla y hombros (hoodie) -->
+    <path d="M770 800 Q 800 500 1025 500 Q 1250 500 1280 800 Z" fill="#090a0f" stroke="#181b24" stroke-width="2"/>
+    <!-- Capucha del hoodie -->
+    <path d="M895 520 Q 1025 455 1155 520 Q 1120 575 1025 575 Q 930 575 895 520 Z" fill="#0d0f17"/>
+    <!-- Cabeza / Gorra negra -->
+    <path d="M940 340 Q 940 230 1025 230 Q 1110 230 1110 340 L 1118 395 Q 1025 415 932 395 Z" fill="#0b0d13" stroke="#1e222e" stroke-width="1.5"/>
+    <text x="1025" y="295" text-anchor="middle" fill="#64748b" font-family="Montserrat, sans-serif" font-weight="700" font-size="13" letter-spacing="2">GOOD</text>
+    <text x="1025" y="313" text-anchor="middle" fill="#64748b" font-family="Montserrat, sans-serif" font-weight="700" font-size="13" letter-spacing="2">MUSIC</text>
+    <text x="1025" y="331" text-anchor="middle" fill="#64748b" font-family="Montserrat, sans-serif" font-weight="700" font-size="13" letter-spacing="2">BETTER</text>
+    <text x="1025" y="349" text-anchor="middle" fill="#64748b" font-family="Montserrat, sans-serif" font-weight="700" font-size="13" letter-spacing="2">PEOPLE</text>
+  </g>
+
+  <!-- Degradado oscuro izquierdo para legibilidad perfecta del texto -->
+  <rect width="1600" height="800" fill="url(#darkLeft)"/>
+</svg>

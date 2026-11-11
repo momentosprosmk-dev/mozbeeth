@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skylineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b2d4a"/>
+      <stop offset="50%" stop-color="#c25953"/>
+      <stop offset="85%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#11131a"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#skylineGrad)"/>
+  <!-- Silueta de rascacielos al atardecer -->
+  <g fill="#0c0e14">
+    <rect x="40" y="210" width="55" height="190"/>
+    <rect x="105" y="240" width="45" height="160"/>
+    <rect x="165" y="170" width="60" height="230"/>
+    <rect x="240" y="110" width="70" height="290"/>
+    <polygon points="275,60 265,110 285,110"/>
+    <rect x="320" y="190" width="65" height="210"/>
+    <rect x="400" y="150" width="55" height="250"/>
+    <rect x="470" y="220" width="60" height="180"/>
+    <rect x="0" y="340" width="600" height="60"/>
+  </g>
+</svg>

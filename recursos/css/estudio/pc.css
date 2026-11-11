@@ -1,0 +1,15 @@
+/* pc.css | El Estudio & Equipos (>= 1024px) - Mozbeeth */
+
+@media (min-width: 1024px) {
+  .estudio-scroll {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px 100px;
+  }
+
+  .gear-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}

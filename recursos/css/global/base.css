@@ -1,0 +1,76 @@
+/* base.css | Configuración Global - Mozbeeth */
+
+/* --- CONFIGURACIÓN GENERAL --- */
+:root {
+  --font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Montserrat', sans-serif;
+  --font-signature: 'Caveat', 'Brush Script MT', cursive;
+  --logo-height: 46px;
+  --header-height: 76px;
+  --header-padding-vertical: 8px;
+  --header-padding-horizontal: 14px;
+  --header-font-size-titulo: 28px;
+  --footer-height: 58px;
+  --footer-padding-vertical: 10px;
+  --footer-padding-horizontal: 18px;
+
+  --form-reservar-font-size-label: 16px;
+  --form-reservar-font-size-input: 16px;
+
+  /* Paleta Negra Predominante + Dorado Champagne (Estilo Referencia) */
+  --negro: #060709;
+  --negro-oscuro: #0b0c10;
+  --negro-claro: #111318;
+  --negro-tarjeta: #0e1015;
+  --gris: #8e95a2;
+  --gris-oscuro: #1a1d24;
+  --gris-claro: #d1d5db;
+  --blanco: #ffffff;
+  --blanco-oscuro: #f3f4f6;
+  --blanco-claro: #fafafa;
+
+  /* Acento Dorado Champagne / Arena Suave */
+  --oro: #d4a97b;
+  --oro-oscuro: #b88b5c;
+  --oro-claro: #e3be96;
+  --violeta: #d4a97b;
+  --rosa: #d4a97b;
+  --borde-sutil: rgba(255, 255, 255, 0.08);
+  --borde-tarjeta: rgba(255, 255, 255, 0.07);
+
+  /* Colores de plataformas */
+  --spotify-green: #1db954;
+  --youtube-red: #ff0000;
+  --soundcloud-orange: #ff5500;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* --- ESTRUCTURA GENERAL DE ARCHIVO --- */
+html, body {
+  background-color: var(--negro);
+  color: var(--blanco);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- RESPONSIVE --- */
+/* Pantallas menores a 1024px (Movil / Tablet) */
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 64px;
+    --header-font-size-titulo: 22px;
+    --footer-height: 56px;
+    --logo-height: 40px;
+  }
+}
+
+/* Pantallas mayores a 1024px (PC) */
+@media (min-width: 1024px) {
+}

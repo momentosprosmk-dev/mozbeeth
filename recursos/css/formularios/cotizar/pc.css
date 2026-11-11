@@ -1,0 +1,13 @@
+/* pc.css | Formulario Cotizar (>= 1024px) - Mozbeeth */
+
+@media (min-width: 1024px) {
+  .cotizar-scroll {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 100px;
+  }
+
+  .form-box {
+    padding: 38px 42px;
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "services": [
+    {
+      "id": "srv-prod",
+      "icon": "fa-sliders",
+      "badge": "Más Solicitado",
+      "title": "Producción Musical Completa",
+      "description": "Creación de un track 100% original a tu medida. Desde la composición de acordes y diseño sonoro hasta arreglos finales listos para grabar voces.",
+      "features": [
+        "Beat exclusivo personalizado a tu estilo",
+        "Dirección vocal y estructura comercial",
+        "Stems separados en WAV 24-bit",
+        "Hasta 3 rondas de revisiones incluidas"
+      ],
+      "startingPrice": "Desde $250 USD"
+    },
+    {
+      "id": "srv-mix",
+      "icon": "fa-wave-square",
+      "badge": "Calidad Estudio",
+      "title": "Mezcla & Mastering Profesional",
+      "description": "Claridad, pegada y profundidad competitiva. Procesamiento híbrido con cadenas analógicas y digitales para sonar fuerte y limpio en Spotify y Apple Music.",
+      "features": [
+        "Afinación vocal precisa (Melodyne / Auto-Tune)",
+        "Balance dinámico, EQ y espacialidad 3D",
+        "Mastering optimizado para streaming (-8 a -14 LUFS)",
+        "Entrega de versión Main, Instrumental y Acapella"
+      ],
+      "startingPrice": "Desde $120 USD"
+    },
+    {
+      "id": "srv-vocal",
+      "icon": "fa-microphone-lines",
+      "badge": "Presencial / Remoto",
+      "title": "Grabación & Producción Vocal",
+      "description": "Sesiones guiadas para capturar tu mejor interpretación. Incluye cadena de grabación de alta gama, doblajes, armonías y ad-libs creativos.",
+      "features": [
+        "Coaching de interpretación durante la sesión",
+        "Diseño de cadenas de efectos vocales",
+        "Comping y edición de tiempo detallada",
+        "Entrega de proyecto listo para mezcla"
+      ],
+      "startingPrice": "Desde $60 USD / sesión"
+    }
+  ],
+  "licenses": [
+    {
+      "id": "lic-basic",
+      "name": "Licencia MP3 / WAV",
+      "price": "$39 USD",
+      "subtitle": "Ideal para lanzamientos independientes y sencillos",
+      "popular": false,
+      "perks": [
+        "Archivo WAV sin comprimir + MP3 320kbps",
+        "Sin marcas de voz (Untagged)",
+        "Hasta 100,000 reproducciones en plataformas",
+        "1 Video Musical monetizado",
+        "Entrega inmediata digital"
+      ]
+    },
+    {
+      "id": "lic-stems",
+      "name": "Licencia Trackout (Stems)",
+      "price": "$89 USD",
+      "subtitle": "Control total para una mezcla profesional de tus voces",
+      "popular": true,
+      "perks": [
+        "WAV + MP3 + Pistas separadas (Stems en WAV)",
+        "Hasta 500,000 reproducciones en plataformas",
+        "Permite mezcla detallada pista por pista",
+        "Presentaciones en vivo ilimitadas",
+        "Contrato PDF de licencia comercial"
+      ]
+    },
+    {
+      "id": "lic-exclusive",
+      "name": "Derechos Exclusivos",
+      "price": "Consultar",
+      "subtitle": "El beat se retira de la tienda y pasa a ser 100% tuyo",
+      "popular": false,
+      "perks": [
+        "Propiedad exclusiva — se elimina del catálogo",
+        "Reproducciones y ventas ilimitadas",
+        "Todos los Stems + Proyecto fuente",
+        "Distribución en sellos y sincronización TV/Cine",
+        "Acuerdo de publishing personalizado"
+      ]
+    }
+  ]
+}

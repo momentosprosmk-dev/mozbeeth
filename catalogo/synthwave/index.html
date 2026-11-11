@@ -1,0 +1,62 @@
+<!-- index.html | Catálogo Synthwave / Pop - MOZBEETH -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beats Synthwave & Pop - MOZBEETH</title>
+  <link rel="icon" href="/recursos/media/global/logo_mozbeeth.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/recursos/css/global/base.css" />
+  <link rel="stylesheet" href="/recursos/css/global/header.css" />
+  <link rel="stylesheet" href="/recursos/css/global/footer.css" />
+  <link rel="stylesheet" href="/recursos/css/global/scrollVertical.css" />
+  <link rel="stylesheet" href="/recursos/css/catalogo/movil.css" />
+  <link rel="stylesheet" href="/recursos/css/catalogo/pc.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="/"><img src="/recursos/media/global/logo_mozbeeth.svg" alt="Logo Mozbeeth" /></a></div>
+    <nav class="nav">
+      <ul>
+        <li><a href="/">INICIO</a></li>
+        <li><a href="/catalogo/categorias/" class="active">BEATS</a></li>
+        <li><a href="/servicios/">SERVICIOS</a></li>
+        <li><a href="/estudio/">SOBRE MÍ</a></li>
+        <li><a href="/formularios/cotizar/">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <button id="btn-menu" class="menu-btn no-active">☰</button>
+  </header>
+
+  <section class="section-scroll catalogo-page-scroll">
+    <div class="beats-section-header">
+      <h2>BEATS SYNTHWAVE &amp; POP</h2>
+      <a href="/catalogo/categorias/">VER TODOS &rarr;</a>
+    </div>
+    <div class="beats-pc-grid js-beats-pc-grid"></div>
+    <div id="featured-beat-container"></div>
+    <div class="beats-movil-list js-beats-movil-list"></div>
+  </section>
+
+  <div id="overlay" class="overlay"></div>
+  <div id="menu-container"></div>
+  <div id="reproductor-container"></div>
+
+  <footer>
+    <section class="footer-movil">
+      <a href="/catalogo/categorias/" class="btn-footer">← Todos</a>
+      <a href="/formularios/cotizar/" class="btn-footer btn-footer-alt">💬 Cotizar</a>
+    </section>
+    <div id="footer-pc"></div>
+  </footer>
+
+  <script>window.CATALOG_INITIAL_FILTER = "synthwave";</script>
+  <script src="/recursos/js/global/gateway.js"></script>
+  <script src="/recursos/js/global/copyright.js"></script>
+  <script src="/recursos/js/desplegable/modulesMenu.js"></script>
+  <script src="/recursos/js/desplegable/menuLoader.js"></script>
+  <script src="/recursos/js/global/audioEngine.js"></script>
+  <script src="/recursos/js/catalogo/catalogo.js"></script>
+</body>
+</html>

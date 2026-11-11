@@ -1,0 +1,158 @@
+/* header.css | Header General - Mozbeeth */
+
+/* --- HEADER GENERAL --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  padding: 0 40px;
+  background: rgba(6, 7, 9, 0.95);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Logo */
+.logo a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo img {
+  height: var(--logo-height);
+  width: auto;
+}
+
+/* --- HEADER | NAVEGACIÓN PC --- */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--gris-claro);
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 10px 4px;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--oro);
+  transition: width 0.25s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--blanco);
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+/* Acciones derechas en PC (Redes + Botón Trabaja Conmigo) */
+.header-right-pc {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header-socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-socials a {
+  color: var(--blanco);
+  font-size: 1rem;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.header-socials a:hover {
+  opacity: 1;
+  color: var(--oro);
+}
+
+.btn-header-cta {
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  transition: all 0.25s ease;
+}
+
+.btn-header-cta:hover {
+  border-color: var(--oro);
+  color: var(--oro);
+}
+
+/* --- HEADER | NAVEGACIÓN MOVIL --- */
+.menu-btn {
+  display: none;
+  font-weight: 400;
+}
+
+.menu-btn.active {
+  color: var(--oro);
+}
+
+.menu-btn.no-active {
+  background: none;
+  color: var(--blanco);
+  border: none;
+}
+
+.menu-btn:focus {
+  outline: none;
+}
+
+/* --- HEADER | RESPONSIVE --- */
+/* Pantallas menores a 1024px (Movil) */
+@media (max-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+  }
+  .logo {
+    margin: 0;
+  }
+  .nav,
+  .header-right-pc {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    cursor: pointer;
+    line-height: 1;
+  }
+}

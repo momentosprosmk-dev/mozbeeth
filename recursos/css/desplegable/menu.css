@@ -1,0 +1,82 @@
+/* menu.css | Menú lateral desplegable - Mozbeeth */
+
+.overlay {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  width: 100%;
+  min-height: calc(100dvh - var(--header-height));
+  background: rgba(0, 0, 0, 0.82);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 998;
+}
+
+.overlay.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-opciones {
+  position: fixed;
+  top: var(--header-height);
+  right: 0;
+  width: 300px;
+  max-height: calc(100% - 50px);
+  background: var(--negro-claro);
+  color: var(--blanco);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  border-left: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.menu-opciones.visible {
+  transform: translateX(0);
+}
+
+.menu-opciones ul {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.menu-opciones ul li {
+  margin: 0.25rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.menu-opciones ul li:last-child {
+  border-bottom: none;
+}
+
+.bt-opc {
+  display: block;
+  color: var(--blanco-oscuro);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  padding: 0.85rem 0.8rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.bt-opc:hover {
+  color: var(--oro);
+  transform: translateX(6px);
+}
+
+.menu-footer {
+  padding: 1rem;
+  font-size: 0.88rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  background: var(--negro-oscuro);
+  color: var(--gris);
+}

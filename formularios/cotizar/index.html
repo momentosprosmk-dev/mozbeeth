@@ -1,0 +1,105 @@
+<!-- index.html | Formulario de Cotización y Reserva de Sesión - MOZBEETH -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cotizar Proyecto o Licencia - MOZBEETH</title>
+  <link rel="icon" href="/recursos/media/global/logo_mozbeeth.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/recursos/css/global/base.css" />
+  <link rel="stylesheet" href="/recursos/css/global/header.css" />
+  <link rel="stylesheet" href="/recursos/css/global/footer.css" />
+  <link rel="stylesheet" href="/recursos/css/global/scrollVertical.css" />
+  <!-- CSS Separado (<= 1024px Movil | >= 1024px PC) -->
+  <link rel="stylesheet" href="/recursos/css/formularios/cotizar/movil.css" />
+  <link rel="stylesheet" href="/recursos/css/formularios/cotizar/pc.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="/"><img src="/recursos/media/global/logo_mozbeeth.svg" alt="Logo Mozbeeth" /></a></div>
+    <button id="btn-menu" class="menu-btn no-active">☰</button>
+    <nav class="nav">
+      <ul>
+        <li><a href="/" class="bt-opc">Inicio</a></li>
+        <li><a href="/catalogo/categorias/" class="bt-opc">Catálogo Beats</a></li>
+        <li><a href="/servicios/" class="bt-opc">Servicios</a></li>
+        <li><a href="/creditos/" class="bt-opc">Créditos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-scroll cotizar-scroll">
+    <div class="form-box">
+      <h1 style="font-family:var(--font-display); color:var(--oro); margin:0 0 8px;">COTIZAR PROYECTO / SESIÓN</h1>
+      <p style="color:var(--gris); margin:0 0 22px; font-size:0.95rem;">
+        Completa los datos de tu canción o beat de interés y te atenderé directamente por WhatsApp.
+      </p>
+
+      <form id="cotizarForm">
+        <div class="field">
+          <label for="servicioSeleccionado">Servicio requerido:</label>
+          <select id="servicioSeleccionado" required>
+            <option value="Producción Musical Completa">Producción Musical Completa (Beat desde cero)</option>
+            <option value="Mezcla & Mastering Profesional">Mezcla & Mastering Profesional</option>
+            <option value="Grabación & Producción Vocal">Grabación & Producción Vocal</option>
+            <option value="Licencia de Beat / Instrumental">Licencia de Beat / Instrumental del Catálogo</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="nombre">Nombre completo / Nombre artístico:</label>
+          <input type="text" id="nombre" placeholder="Ej. Nova K" required />
+        </div>
+
+        <div class="field">
+          <label for="presupuesto">Presupuesto estimado (USD):</label>
+          <select id="presupuesto" required>
+            <option value="$39 - $120 USD (Licencia / Mezcla)">$39 - $120 USD (Licencia / Mezcla)</option>
+            <option value="$150 - $350 USD (Single Completo)">$150 - $350 USD (Single Completo)</option>
+            <option value="+$400 USD (EP / Proyecto Exclusivo)">+$400 USD (EP / Proyecto Exclusivo)</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="fecha">Fecha ideal para iniciar / sesión:</label>
+          <input type="date" id="fecha" required />
+        </div>
+
+        <div class="field">
+          <label for="detallesProyecto">Detalles, referencias o nombre del Beat:</label>
+          <textarea
+            id="detallesProyecto"
+            rows="3"
+            placeholder="Género musical, artistas de referencia o enlace a tu maqueta..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="whatsapp-btn-container">
+          <button type="submit" id="submitBtn">
+            <i class="fa-brands fa-whatsapp"></i>
+            Enviar por WhatsApp
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div id="overlay" class="overlay"></div>
+  <div id="menu-container"></div>
+
+  <footer>
+    <section class="footer-movil">
+      <a href="/" class="btn-footer">⌂ Página Principal</a>
+    </section>
+    <div id="footer-pc"></div>
+  </footer>
+
+  <script src="/recursos/js/global/gateway.js"></script>
+  <script src="/recursos/js/global/copyright.js"></script>
+  <script src="/recursos/js/desplegable/modulesMenu.js"></script>
+  <script src="/recursos/js/desplegable/menuLoader.js"></script>
+  <script src="/recursos/js/formularios/cotizar/submit.js"></script>
+</body>
+</html>

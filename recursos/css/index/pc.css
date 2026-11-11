@@ -1,0 +1,143 @@
+/* pc.css | Vista Escritorio (>= 1024px) - Portal Mozbeeth (Estilo betz_pc) */
+
+.pc-portal {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* 1. HERO PC */
+.hero-pc {
+  position: relative;
+  min-height: 440px;
+  background-image: url('../../media/index/hero_mozbeeth.svg');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+}
+
+.hero-pc-inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px 32px;
+}
+
+.hero-pc-eyebrow {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--gris-claro);
+  margin-bottom: 14px;
+}
+
+.hero-pc-title {
+  font-size: clamp(3rem, 4.6vw, 4.4rem);
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+  color: var(--blanco);
+}
+
+.hero-pc-title span {
+  display: block;
+  color: var(--oro);
+}
+
+.hero-pc-sub {
+  font-size: 1rem;
+  color: var(--gris-claro);
+  margin: 0 0 28px;
+}
+
+.hero-pc-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.btn-pc-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--oro);
+  color: var(--negro);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.btn-pc-gold:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+}
+
+.btn-pc-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 11, 15, 0.7);
+  color: var(--blanco);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border-radius: 6px;
+  border: 1px solid rgba(212, 169, 123, 0.45);
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-pc-outline:hover {
+  border-color: var(--oro);
+  color: var(--oro);
+}
+
+/* 2. SECCIÓN DE BEATS DESTACADOS EN PC */
+.pc-beats-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 42px 32px 56px;
+}
+
+/* Frase inferior minimalista en PC */
+.pc-quote-bottom {
+  text-align: center;
+  padding: 12px 20px 36px;
+}
+
+.pc-quote-bottom p {
+  font-size: 0.74rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin: 0 0 8px;
+}
+
+.pc-quote-bottom span {
+  font-size: 0.68rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gris-claro);
+}
+
+/* --- RESPONSIVE --- */
+/* Pantallas menores a 1024px (Movil) */
+@media (max-width: 1024px) {
+  .pc-portal {
+    display: none;
+  }
+}

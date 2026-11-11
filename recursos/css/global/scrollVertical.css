@@ -1,0 +1,18 @@
+/* scrollVertical.css | Scroll personalizado - Mozbeeth */
+
+.section-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.section-scroll::-webkit-scrollbar-track {
+  background: #090910;
+  border-radius: 5px;
+}
+.section-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--oro-oscuro), var(--violeta));
+  border-radius: 10px;
+  border: 1px solid var(--negro);
+}
+.section-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--oro) #090910;
+}
